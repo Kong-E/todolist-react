@@ -1,0 +1,41 @@
+* {
+  font-family: "SpoqaHanSansNeo-Regular";
+  box-sizing: border-box;
+  color: rgb(71 85 105);
+  font-weight: bold;
+}
+.main_root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8fafc;
+}
+.todo_list_root {
+  background-color: #fff;
+  width: 350px;
+  height: 400px;
+  overflow-y: auto;
+  padding: 40px 35px;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgb(189 197 209 / 40%);
+}
+.todo_list_container {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.todo_list_container::-webkit-scrollbar {
+  width: 12px; /* 스크롤바의 너비 */
+}
+
+.todo_list_container::-webkit-scrollbar-thumb {
+  background: #e2e8f0; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+
+.todo_list_container::-webkit-scrollbar-track {
+  background: transparent;
+}
