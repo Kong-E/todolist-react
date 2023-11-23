@@ -3,7 +3,7 @@ name: "웹프로그래밍 실습 CI/CD"
 on:
   push:
     branches:
-      - main
+      - master
     tags:
       - release.*
 
@@ -14,3 +14,10 @@ jobs:
       - run: echo "튜터링 때 만든 투두리스트... ${{ github.repository }}"
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+      - name: "npm 설치"
+          run: npm install
+      - name: "npm 빌드"
+          run: npm run build
+
